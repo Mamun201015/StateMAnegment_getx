@@ -10,8 +10,20 @@ class SplashView extends GetView<SplashController> {
     Get.put(SplashController());
     return const Scaffold(
       body: Center(
-        child: Text("Splash Screen"),
-        
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              child: CircularProgressIndicator(
+                strokeWidth: 5,
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text("Loading.....")
+          ],
+        ),
       ),
     );
   }
