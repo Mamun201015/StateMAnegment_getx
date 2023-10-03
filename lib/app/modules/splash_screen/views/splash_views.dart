@@ -8,18 +8,10 @@ class SplashView extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     Get.put(SplashController());
-    return Scaffold(
+    return const Scaffold(
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(
-              child: CircularProgressIndicator(
-                strokeWidth: 5,
-              ),
-            )
-          ],
-        ),
+        child: Text("Splash Screen"),
+        
       ),
     );
   }

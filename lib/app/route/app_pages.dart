@@ -13,7 +13,7 @@ class AppPages {
         page: () => const SplashView(),
         binding: Splashbindings()),
     GetPage(
-        name: _path.NavScreen,
+        name: _path.navScreen,
         page: () => const Navview(),
         binding: NavBindings())
   ];

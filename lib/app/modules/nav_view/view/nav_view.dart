@@ -7,11 +7,14 @@ class Navview extends GetView<NavController> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
-      ]),
+    return const Center(
+      child: Text("NavScreen"),
     );
+    // Scaffold(
+    //   bottomNavigationBar: BottomNavigationBar(items: [
+    //     BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+    //     BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+    //   ]),
+    // );
   }
 }

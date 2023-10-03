@@ -10,7 +10,11 @@ class SplashController extends GetxController {
   }
 
   nextpages() {
-    Future.delayed(const Duration(seconds: 5));
-    Get.offAllNamed(Routes.NavScreen);
+    Future.delayed(
+      Duration(seconds: 5),
+      () {
+        Get.offAllNamed(Routes.navScreen);
+      },
+    );
   }
 }
