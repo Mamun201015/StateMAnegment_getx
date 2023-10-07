@@ -4,7 +4,6 @@ import 'package:ui_degine_1/app/route/app_pages.dart';
 
 void main() {
   runApp(const MyApp());
-  
 }
 
 class MyApp extends StatelessWidget {

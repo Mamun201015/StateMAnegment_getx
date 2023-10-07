@@ -8,20 +8,28 @@ class SplashView extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     Get.put(SplashController());
-    return const Scaffold(
+    return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image(image: AssetImage("assets/image/images5.png")),
+            
+            SizedBox(
+              height: Get.width / 10,
+            ),
             SizedBox(
               child: CircularProgressIndicator(
                 strokeWidth: 5,
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
-            Text("Loading.....")
+            Text(
+              "Loading.....",
+               style: TextStyle(color: Colors.blue),
+            )
           ],
         ),
       ),
